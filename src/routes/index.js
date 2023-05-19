@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import styled, { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
 import Materials from "../components/main-content/Materials";
 import Rating from "../components/main-content/Rating";
 import Students from "../components/main-content/Students";
@@ -44,7 +44,6 @@ const MainRouts =()=>{
           <Route path="*" element={<Navigate to="/courses/materials" />} />
         </Routes>
       </Content>
-      {/* <GlobalStyle /> */}
     </div>
   )
 }
@@ -54,10 +53,4 @@ const Content = styled.div`
   margin-left: 250px;
 `;
 
-// const GlobalStyle = createGlobalStyle`
-// body{
-//   margin: 0;
-//   box-sizing: border-box;
-//   background-color: #d5d5d5;
-// }
-// `
+
